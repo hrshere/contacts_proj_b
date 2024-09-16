@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from datetime import timedelta
 
 from pathlib import Path
+from dotenv import load_dotenv
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,7 +31,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['192.168.1.137','192.168.1.24','127.0.0.1','192.168.0.59','192.168.1.15','192.168.0.60']
 
-
+# Load environment variables from .env file
+load_dotenv()
 # Application definition
 
 INSTALLED_APPS = [
